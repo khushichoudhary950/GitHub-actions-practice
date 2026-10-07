@@ -1,25 +1,19 @@
-# Workflow [No identation required for naming the workflow]
+# Workflow [No indentation required for naming the workflow]
 name: Hello
 
-# On tells when the workflow should run (Give identation by tab)
+# On tells when the workflow should run (Give indentation by tab)
 on: 
   workflow_dispatch:
 
 # Job tells what the workflow should do, there can be one or more than one jobs, hence we write jobs
-# job is an ibject so need idenattion
+# job is an object so need indentation
 
 jobs: 
-   # 1st job (give idenattion)
+   # 1st job (give indentation)
    say-hello:
-   # Creates an emphermal conntainer with ubuntu running
+   # Creates an Ephermal container with ubuntu running
    runs-on: ubuntu-latest
-   # That emphermal container will have steps to execute, hence name those steps and use run: run has the command
+   # That ephermal container will have steps to execute, hence name those steps and use run: run has the command
    steps:
       - name: Say hello to everyone
       run: echo "Hello Dosto"
-
-# Steps
-# Should be inside the job
-
-# Actions
-# Should be inside the steps
